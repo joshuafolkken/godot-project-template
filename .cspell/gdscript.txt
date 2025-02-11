@@ -1,0 +1,3 @@
+elif
+onready
+randf

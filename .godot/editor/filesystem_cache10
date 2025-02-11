@@ -1,8 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1739243673
+::res://::1739313331
+cspell.json::JSON/JSON::-1::1739312905::0::1::::<><><>0<>0<><>::
 default_bus_layout.tres::AudioBusLayout/AudioBusLayout::-1::1739202396::0::1::::<><><>0<>0<><>::
 default_env.tres::Environment/Environment::-1::1739202396::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D/CompressedTexture2D::7744108970585187723::1606009720::1739202452::1::::<><><>0<>0<>f35027b0e774217c463c11797707d928<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
+main.tscn::PackedScene/PackedScene::7795316728569878180::1739308583::0::1::::<><><>0<>0<><>::
 ::res://art/::1739202453
 body.material::StandardMaterial3D/StandardMaterial3D::-1::1605908508::0::1::::<><><>0<>0<><>::
 eye.material::StandardMaterial3D/StandardMaterial3D::-1::1606514142::0::1::::<><><>0<>0<><>::
