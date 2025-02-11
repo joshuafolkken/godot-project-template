@@ -1,0 +1,4 @@
+gdscript
+gdformat
+gdlint
+gdtoolkit

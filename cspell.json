@@ -1,0 +1,15 @@
+{
+  "dictionaries": ["godot", "gdscript"],
+  "dictionaryDefinitions": [
+    {
+      "name": "godot",
+      "path": "./.cspell/godot.txt",
+      "addWords": true
+    },
+    {
+      "name": "gdscript",
+      "path": "./.cspell/gdscript.txt",
+      "addWords": true
+    }
+  ]
+}
