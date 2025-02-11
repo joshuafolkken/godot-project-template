@@ -1,0 +1,6 @@
+{
+  "editor.formatOnSave": true,
+  "[gdscript]": {
+    "editor.defaultFormatter": "EddieDover.gdscript-formatter-linter"
+  }
+}
