@@ -1,0 +1,58 @@
+name: Godot CI
+
+on:
+  push:
+    branches: [main]
+
+  pull_request:
+    branches: [main]
+
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-and-format:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install GDScript Toolkit
+        run: |
+          pip install "gdtoolkit==4.*"
+
+      - name: Lint
+        run: |
+          gdlint .
+
+      - name: Format Check
+        run: |
+          gdformat --check .
+
+  unit-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    permissions:
+      actions: write
+      checks: write
+      contents: write
+      pull-requests: write
+      statuses: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - uses: MikeSchulze/gdUnit4-action@v1.1.1
+        with:
+          godot-version: "4.3"
+          paths: |
+            res://
+          timeout: 5
+          report-name: test_report.xml
