@@ -1,0 +1,52 @@
+pre-commit:
+  parallel: true
+
+  commands:
+    prevent-main-push:
+      run: |
+        branch=$(git rev-parse --abbrev-ref HEAD)
+        if [ "$branch" = "main" ]; then
+          echo "Direct commits to the main branch are not allowed. Please use a different branch."
+          exit 1
+        fi
+
+    gdscript-format:
+      glob: "*.gd"
+      run: gdformat {staged_files}
+
+    spell-check:
+      glob: "*.gd, *.md"
+      run: npx cspell {staged_files}
+
+pre-push:
+  parallel: true
+
+  commands:
+    check-merge-conflict:
+      run: |
+        current_branch=$(git rev-parse --abbrev-ref HEAD)
+        git fetch origin main
+        git merge-base --is-ancestor main $current_branch
+        if [ $? -eq 0 ]; then
+            git merge --no-commit --no-ff origin/main
+            if [ $? -ne 0 ]; then
+                echo "Merge conflict detected. Please resolve before pushing."
+                git reset --soft HEAD
+                exit 1
+            else
+                echo "No merge conflict detected."
+                git reset --soft HEAD
+            fi
+        else
+            echo "Your branch has diverged from 'main'. Please rebase or merge 'main' into your branch first."
+            exit 1
+        fi
+
+    gdscript-lint:
+      glob: "*.gd"
+      run: gdlint {staged_files}
+
+    # gdscript-test:
+    #   run: |
+    #     export GODOT_BIN=/Applications/Godot.app/Contents/MacOS/Godot
+    #     ./addons/gdUnit4/runtest.sh -a ./src
