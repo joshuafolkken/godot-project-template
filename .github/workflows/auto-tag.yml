@@ -1,0 +1,42 @@
+name: Auto Tag on Version Change
+
+on:
+  push:
+    branches: [main]
+    paths: [project.godot]
+
+jobs:
+  auto-tag:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      tag_created: ${{ steps.auto_tag.outputs.tag_created }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Auto Tag script
+        id: auto_tag
+        run: |
+          chmod +x .github/scripts/auto_tag.sh
+
+          ./.github/scripts/auto_tag.sh
+          result=$?
+
+          if [ $result -eq 0 ]; then
+            echo "tag_created=true" >> "${GITHUB_OUTPUT}"
+          else
+            echo "tag_created=false" >> "${GITHUB_OUTPUT}"
+          fi
+
+      - name: Print tag creation status
+        run: |
+          echo "Tag created: ${{ steps.auto_tag.outputs.tag_created }}"
+
+      - name: Trigger next workflow
+        if: steps.auto_tag.outputs.tag_created == 'true'
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          event-type: new-tag-created
