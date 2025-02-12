@@ -49,7 +49,7 @@ jobs:
         with:
           lfs: true
 
-      - uses: MikeSchulze/gdUnit4-action@v1
+      - uses: MikeSchulze/gdUnit4-action@v1.1.1
         with:
           godot-version: "4.3"
           paths: |
