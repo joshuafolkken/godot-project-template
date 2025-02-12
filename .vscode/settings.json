@@ -1,6 +1,10 @@
 {
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
   "editor.formatOnSave": true,
   "[gdscript]": {
+    "editor.tabSize": 4,
     "editor.defaultFormatter": "EddieDover.gdscript-formatter-linter"
   }
 }
