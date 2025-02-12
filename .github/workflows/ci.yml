@@ -33,28 +33,28 @@ jobs:
         run: |
           gdformat --check .
 
-  # skip job if no tests exist
-  # unit-test:
-  #   runs-on: ubuntu-latest
-  #   timeout-minutes: 10
+  unit-test:
+    if: false # skip job if no tests exist
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
 
-  #   permissions:
-  #     actions: write
-  #     checks: write
-  #     contents: write
-  #     pull-requests: write
-  #     statuses: write
+    permissions:
+      actions: write
+      checks: write
+      contents: write
+      pull-requests: write
+      statuses: write
 
-  #   steps:
-  #     - uses: actions/checkout@v4
-  #       with:
-  #         lfs: true
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
 
-  #     - uses: MikeSchulze/gdUnit4-action@v1.1.1
-  #       with:
-  #         godot-version: "4.3"
-  #         paths: |
-  #           res://scripts/
-  #           res://tests/
-  #         timeout: 5
-  #         report-name: test_report.xml
+      - uses: MikeSchulze/gdUnit4-action@v1.1.1
+        with:
+          godot-version: "4.3"
+          paths: |
+            res://scripts/
+            res://tests/
+          timeout: 5
+          report-name: test_report.xml
