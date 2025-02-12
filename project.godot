@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="Squash the Creeps (3D)"
+config/name="New Game Project"
 config/version="0.1.0"
-config/features=PackedStringArray("4.4")
-config/icon="res://icon.png"
+config/features=PackedStringArray("4.4", "Forward Plus")
+config/icon="res://icon.svg"
 
 [debug]
 
@@ -22,8 +22,3 @@ gdscript/warnings/unsafe_property_access=1
 gdscript/warnings/unsafe_method_access=1
 gdscript/warnings/unsafe_cast=1
 gdscript/warnings/unsafe_call_argument=1
-
-[rendering]
-
-quality/driver/driver_name="GLES2"
-quality/filters/msaa=3
