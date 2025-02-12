@@ -3,6 +3,8 @@
 /android/
 
 
+.import/
+
 export/
 build/
 reports/
