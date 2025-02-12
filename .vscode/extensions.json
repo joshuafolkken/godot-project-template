@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "geequlim.godot-tools",
+    "pkief.material-icon-theme",
+    "streetsidesoftware.code-spell-checker",
+    "usernamehw.errorlens",
+    "eddiedover.gdscript-formatter-linter",
+    "mhutchie.git-graph",
+    "github.vscode-pull-request-github",
+    "github.vscode-github-actions",
+    "arthurlobo.easy-codesnap"
+  ]
+}
