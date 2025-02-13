@@ -34,7 +34,7 @@ jobs:
           gdformat --check .
 
   unit-test:
-    if: false # skip job if no tests exist
+    # if: false # skip job if no tests exist
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
