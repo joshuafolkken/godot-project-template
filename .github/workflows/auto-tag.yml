@@ -27,9 +27,14 @@ jobs:
 
           if [ $result -eq 0 ]; then
             echo "tag_created=true" >> "${GITHUB_OUTPUT}"
+          elif [ $result -eq 3 ]; then
+            echo "tag_created=false" >> "${GITHUB_OUTPUT}"
+            result=0
           else
             echo "tag_created=false" >> "${GITHUB_OUTPUT}"
           fi
+
+          exit $result
 
       - name: Print tag creation status
         run: |

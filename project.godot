@@ -26,3 +26,7 @@ gdscript/warnings/unsafe_call_argument=1
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/gdUnit4/plugin.cfg")
+
+; DUMMY
+[auto_tag]
+test=true
