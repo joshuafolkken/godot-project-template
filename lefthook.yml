@@ -46,7 +46,7 @@ pre-push:
       glob: "*.gd"
       run: gdlint {staged_files}
 
-    # gdscript-test:
-    #   run: |
-    #     export GODOT_BIN=/Applications/Godot.app/Contents/MacOS/Godot
-    #     ./addons/gdUnit4/runtest.sh -a ./src
+    gdscript-test:
+      run: |
+        export GODOT_BIN=/Applications/Godot.app/Contents/MacOS/Godot
+        ./addons/gdUnit4/runtest.sh -a ./tests -a ./scripts
