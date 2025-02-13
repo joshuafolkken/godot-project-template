@@ -29,4 +29,4 @@ enabled=PackedStringArray("res://addons/gdUnit4/plugin.cfg")
 
 ; DUMMY
 [auto_tag]
-test=true
+LATEST="2025.02.13"
