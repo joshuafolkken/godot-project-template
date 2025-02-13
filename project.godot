@@ -12,8 +12,13 @@ config_version=5
 
 config/name="New Game Project"
 config/version="0.33.0"
+run/main_scene="uid://djcdy0d718ei3"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[auto_tag]
+
+LATEST="2025.02.13"
 
 [debug]
 
@@ -26,7 +31,3 @@ gdscript/warnings/unsafe_call_argument=1
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/gdUnit4/plugin.cfg")
-
-; DUMMY
-[auto_tag]
-LATEST="2025.02.13"

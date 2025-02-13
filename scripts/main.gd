@@ -3,6 +3,8 @@ extends Node
 
 var _test_color_rect: ColorRect
 
+@onready var version_label : Label = $VersionLabel
+
 
 func _init() -> void:
 	_test_color_rect = ColorRect.new()
@@ -11,6 +13,7 @@ func _init() -> void:
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	version_label.text = ProjectSettings.get_setting("application/config/version")
 	pass  # Replace with function body.
 
 
