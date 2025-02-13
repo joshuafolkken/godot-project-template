@@ -1,6 +1,5 @@
 extends GdUnitTestSuite
 
-
 const _MAIN_SCENE_PATH := "res://scenes/main.tscn"
 
 
