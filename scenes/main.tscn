@@ -4,3 +4,7 @@
 
 [node name="Main" type="Node"]
 script = ExtResource("1_o5qli")
+
+[node name="VersionLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
