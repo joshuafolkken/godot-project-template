@@ -29,11 +29,12 @@ jobs:
             exit 1
           fi
 
-      - name: Setup Godot
-        uses: lihop/setup-godot@v2
+      - uses: chickensoft-games/setup-godot@v1
+        name: 🤖 Setup Godot
         with:
           version: 4.4-beta3
-          export-templates: true
+          use-dotnet: false
+          include-templates: true
 
       - name: Export project to web
         run: |
