@@ -10,7 +10,9 @@
 [![X](https://img.shields.io/badge/Follow-%40joshuafolkken-purple?logo=x&logoColor=fffffflabelColor=)](https://x.com/joshuafolkken)
 
 <div align="center">
-A Godot Project Template<br/>
+A<br/>
+Project Template<br/>
+for<br/>
 
 <a href="https://godotengine.org">
 	<img src="https://godotengine.org/assets/press/logo_large_color_dark.png" width="400" alt="Godot Engine logo">
