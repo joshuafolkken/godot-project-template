@@ -1,4 +1,4 @@
-name: Godot CI
+name: CI
 
 on:
   push:

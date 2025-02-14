@@ -1,4 +1,4 @@
-name: Auto Tag on Version Change
+name: Auto Tag
 
 on:
   push:
