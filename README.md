@@ -10,11 +10,11 @@
 [![X](https://img.shields.io/badge/Follow-%40joshuafolkken-purple?logo=x&logoColor=fffffflabelColor=)](https://x.com/joshuafolkken)
 
 <div align="center">
-	A Godot Project Template
+A Godot Project Template<br/>
 
-  <a href="https://godotengine.org">
-    <img src="https://godotengine.org/assets/press/logo_large_color_dark.png" width="400" alt="Godot Engine logo">
-  </a>
+<a href="https://godotengine.org">
+	<img src="https://godotengine.org/assets/press/logo_large_color_dark.png" width="400" alt="Godot Engine logo">
+</a><br/>
 
 [![Godot 4.4-beta3](https://img.shields.io/badge/Godot-v4.4--beta3-%23478cbf?logo=godot-engine&logoColor=eee&labelColor=)](https://godotengine.org/download/archive/4.4-beta3/)
 
