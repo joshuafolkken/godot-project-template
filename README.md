@@ -1,6 +1,6 @@
 # 🤖 godot-project-template
 
-![Godot 4.4-beta3](https://img.shields.io/badge/Godot-v4.4--beta3-%23478cbf?logo=godot-engine&logoColor=fff&labelColor=)
+[![Godot 4.4-beta3](https://img.shields.io/badge/Godot-v4.4--beta3-%23478cbf?logo=godot-engine&logoColor=fff&labelColor=)](https://godotengine.org/download/archive/4.4-beta3/)
 [![License](https://img.shields.io/github/license/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/blob/main/LICENSE)
 [![Release](https://img.shields.io/github/v/release/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/releases)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/issues?q=is%3Aissue%20state%3Aclosed)
