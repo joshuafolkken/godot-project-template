@@ -18,7 +18,7 @@ for<br/>
 	<img src="https://godotengine.org/assets/press/logo_large_color_dark.png" width="400" alt="Godot Engine logo">
 </a><br/>
 
-[![Godot 4.4-beta3](https://img.shields.io/badge/Godot-v4.4--beta3-%23478cbf?logo=godot-engine&logoColor=eee&labelColor=)](https://godotengine.org/download/archive/4.4-beta3/)
+[![Godot 4.4-beta3](https://img.shields.io/badge/Godot-v4.4--beta4-%23478cbf?logo=godot-engine&logoColor=eee&labelColor=)](https://godotengine.org/)
 
 </div>
 
@@ -28,7 +28,7 @@ This is a collection of essential resources for Godot projects.
 
 ## Tech Stack
 
-- Game Engine: [Godot](https://godotengine.org/) 4.4-beta3
+- Game Engine: [Godot](https://godotengine.org/) 4.4-beta4
 - Programming Language: [GDScript](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/index.html)
 - Testing Framework: [GdUnit4](https://github.com/MikeSchulze/gdUnit4)
 - Git Hooks: [Lefthook](https://github.com/evilmartians/lefthook)
