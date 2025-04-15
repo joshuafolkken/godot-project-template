@@ -53,6 +53,7 @@ This is a collection of essential resources for Godot projects.
 
 - Typed GDScript
 - Warnings for Typed GDScript
+- Localization
 
 ### Code Formatting
 
