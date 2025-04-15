@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="New Game Project"
-config/version="0.42.0"
+config/version="0.43.0"
 run/main_scene="uid://djcdy0d718ei3"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
@@ -27,3 +27,8 @@ gdscript/warnings/unsafe_call_argument=1
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/gdUnit4/plugin.cfg")
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://locale/en.po", "res://locale/ja.po")
+locale/translations_pot_files=PackedStringArray("res://scenes/main.tscn")

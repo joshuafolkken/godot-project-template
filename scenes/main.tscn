@@ -1,10 +1,67 @@
-[gd_scene load_steps=2 format=3 uid="uid://djcdy0d718ei3"]
+[gd_scene load_steps=3 format=3 uid="uid://djcdy0d718ei3"]
 
 [ext_resource type="Script" uid="uid://bbccn2rr1vgd0" path="res://scripts/main.gd" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://c2ygiqd5o7caw" path="res://scripts/lib/language_button.gd" id="2_0wfyh"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_o5qli")
 
 [node name="VersionLabel" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -50.0
+offset_top = -33.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Version Label"
+
+[node name="MessageLabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -36.5
+offset_top = -11.5
+offset_right = 36.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "MESSAGE"
+
+[node name="DateTimeLabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -18.0
+offset_top = 16.5
+offset_right = 20.0
+offset_bottom = 39.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "DateTime"
+
+[node name="LanguageButton" type="OptionButton" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -43.0
+offset_top = -61.0
+offset_right = -11.0
+offset_bottom = -41.0
+grow_horizontal = 0
+grow_vertical = 0
+focus_mode = 0
+script = ExtResource("2_0wfyh")
+metadata/_custom_type_script = "uid://c2ygiqd5o7caw"
+
+[connection signal="language_changed" from="LanguageButton" to="." method="_on_language_button_language_changed"]
