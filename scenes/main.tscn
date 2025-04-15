@@ -33,6 +33,7 @@ offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
 text = "MESSAGE"
+horizontal_alignment = 1
 
 [node name="DateTimeLabel" type="Label" parent="."]
 anchors_preset = 8
@@ -47,6 +48,7 @@ offset_bottom = 39.5
 grow_horizontal = 2
 grow_vertical = 2
 text = "DateTime"
+horizontal_alignment = 1
 
 [node name="LanguageButton" type="OptionButton" parent="."]
 anchors_preset = 3
