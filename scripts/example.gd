@@ -1,4 +1,4 @@
-class_name Main
+class_name Example
 extends Node
 
 var _test_color_rect: ColorRect
