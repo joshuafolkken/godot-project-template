@@ -49,12 +49,10 @@ pre-push:
     gdscript-test:
       run: |
         if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" ]]; then
-          .\addons\gdUnit4\runtest.cmd -a ./tests -a ./scripts --godot_bin 'C:\Program Files\Godot\Godot_v4.4.1-stable_win64.exe'
-        else
-          if [[ "$OSTYPE" == "darwin"* ]]; then
+          export GODOT_BIN='C:\Program Files\Godot\Godot_v4.4.1-stable_win64.exe'
+        elif [[ "$OSTYPE" == "darwin"* ]]; then
             export GODOT_BIN=/Applications/Godot.app/Contents/MacOS/Godot
-          else
-            export GODOT_BIN=godot
-          fi
-          ./addons/gdUnit4/runtest.sh -a ./tests -a ./scripts
+        else
+          export GODOT_BIN=godot
         fi
+        ./addons/gdUnit4/runtest.sh -a ./tests -a ./scripts

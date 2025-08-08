@@ -52,9 +52,7 @@ static func load_language_setting(default_locale: String) -> String:
 	var config := ConfigFile.new()
 
 	if config.load(CONFIG.PATH) != OK:
-		push_warning(
-			"[Settings] " + ERROR_MESSAGES[ErrorCode.LOAD_ERROR] % [CONFIG.PATH, default_locale]
-		)
+		# print("[Settings] " + ERROR_MESSAGES[ErrorCode.LOAD_ERROR] % [CONFIG.PATH, default_locale])
 		return default_locale
 
 	var saved_locale: String = config.get_value(
