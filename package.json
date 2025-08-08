@@ -1,10 +1,10 @@
 {
     "scripts": {
         "postinstall": "lefthook install",
-        "spellcheck": "cspell \"**/*\"",
-        "spellcheck:fix": "cspell \"**/*\" --fix",
-        "spellcheck:quiet": "cspell \"**/*\" --quiet",
-        "spellcheck:report": "cspell \"**/*\" --report all",
+        "spell": "cspell \"**/*\"",
+        "spell:fix": "cspell \"**/*\" --fix",
+        "spell:quiet": "cspell \"**/*\" --quiet",
+        "spell:report": "cspell \"**/*\" --report all",
         "pre-commit": "lefthook run pre-commit",
         "pre-push": "lefthook run pre-push",
         "format": "gdformat scripts/ scenes/",

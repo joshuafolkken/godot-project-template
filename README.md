@@ -10,205 +10,183 @@
 
 [![Use this template](https://img.shields.io/badge/Use_this_template-Click_here-blue?style=for-the-badge)](https://github.com/joshuafolkken/godot-project-template/generate)
 
+[![Godot 4.4.1](https://img.shields.io/badge/Godot-v4.4.1-%23478cbf?logo=godot-engine&logoColor=eee&labelColor=)](https://godotengine.org/)
+[![License](https://img.shields.io/github/license/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/blob/main/LICENSE)
+[![CI](https://github.com/joshuafolkken/godot-project-template/actions/workflows/ci.yml/badge.svg)](https://github.com/joshuafolkken/godot-project-template/actions/workflows/ci.yml)
+
+
+
 </div>
 
-## 📊 Project Status
 
-| Category | Badges |
-|----------|--------|
-| **🚀 Engine & Version** | [![Godot 4.4.1](https://img.shields.io/badge/Godot-v4.4.1-%23478cbf?logo=godot-engine&logoColor=eee&labelColor=)](https://godotengine.org/) [![Release](https://img.shields.io/github/v/release/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/releases) |
-| **📜 License & Legal** | [![License](https://img.shields.io/github/license/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/blob/main/LICENSE) |
-| **📈 Repository Metrics** | [![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/issues?q=is%3Aissue%20state%3Aclosed) ![GitHub repo size](https://img.shields.io/github/repo-size/joshuafolkken/godot-project-template) |
-| **⚙️ CI/CD Pipeline** | [![CI](https://github.com/joshuafolkken/godot-project-template/actions/workflows/ci.yml/badge.svg)](https://github.com/joshuafolkken/godot-project-template/actions/workflows/ci.yml) [![Auto Tag](https://github.com/joshuafolkken/godot-project-template/actions/workflows/auto-tag.yml/badge.svg)](https://github.com/joshuafolkken/godot-project-template/actions/workflows/auto-tag.yml) [![Deploy](https://github.com/joshuafolkken/godot-project-template/actions/workflows/deploy-web.yml/badge.svg)](https://github.com/joshuafolkken/godot-project-template/actions/workflows/deploy-web.yml) |
-| **💬 Social & Community** | [![X](https://img.shields.io/badge/Follow-%40joshuafolkken-purple?logo=x&logoColor=fffffflabelColor=)](https://x.com/joshuafolkken) |
 
-## 🎯 What is godot-project-template?
 
-A complete Godot project template with essential development tools and automation features to boost your game development efficiency.
-
-## ✨ Main Features
-
-### 🔧 Development Tools & Automation
-
-| Category | Features | Description |
-|----------|----------|-------------|
-| **📁 Project Structure** | Organized directories | `assets/`, `scenes/`, `scripts/`, `tests/` |
-| **🖥️ VSCode Integration** | Settings & Extensions | Recommended extensions, auto-format on save |
-| **📝 Code Quality** | Typed GDScript | Static typing with warnings enforcement |
-| **🌐 Localization** | Multi-language Support | Built-in localization system |
-| **🎨 Code Formatting** | gdlint & gdformat | Automated code formatting and linting |
-| **✅ Code Validation** | Spell Checker | VSCode extensions with custom dictionaries |
-| **⭐ Included Samples** | Ready-to-use resources | Internationalization, unit tests, web export presets, NPM scripts |
-
-### 🔄 CI/CD & Automation
-
-| Feature | Description |
-|---------|-------------|
-| **Pre-commit checks** | Verify not committing to main branch, format check, and spell check |
-| **Pre-push checks** | Conflict verification, lint, and unit tests |
-| **GitHub PR validation** | Format and test verification on PR submission |
-| **Version tag generation** | Auto-generate version tags when game version is updated in PR |
-| **Web export deployment** | Update gh-pages branch with web export when version tags are created |
-| **Auto-format GDScript** | Format on save in VSCode |
-| **Static Typed GDScript** | Enforcement (configurable) |
-
-### 🧪 Testing & Debugging
-
-| Feature | Description |
-|---------|-------------|
-| **GdUnit4 Framework** | Unit testing with GitHub workflow integration |
-| **Sample Tests** | Included test code examples |
-| **Debugging Support** | Launch from VSCode (Cursor) for debugging capabilities |
-| **NPM Test Commands** | `npm run test:win` (or `test:mac`) |
-
-### 🌐 Web Export & Deployment
-
-| Feature | Description |
-|---------|-------------|
-| **Export Presets** | Web export with custom HTML template |
-| **Twitter Card Tags** | Custom HTML template with Twitter Cards |
-| **GitHub Pages** | Auto-deploy to gh-pages branch |
-| **Version Management** | Automatic version tag generation |
-
-### 📦 Version Control & Security
-
-| Feature | Description |
-|---------|-------------|
-| **Git Configuration** | Custom `.gitignore` and `.gitattributes` |
-| **Lefthook Integration** | Pre-commit and pre-push automation |
-| **Security Policies** | Code security and security policy |
-| **Branch Protection** | Automated branch protection rules |
-
-## 🔧 Tech Stack
-
-| Technology | Version | Description |
-|------------|---------|-------------|
-| [Godot](https://godotengine.org/) | 4.4.1 | Open-source game engine |
-| [GDScript](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/index.html) | - | Godot's native scripting language |
-| [GdUnit4](https://github.com/MikeSchulze/gdUnit4) | - | Unit testing framework |
-| [Lefthook](https://github.com/evilmartians/lefthook) | - | Git hooks manager |
-| [Cursor](https://www.cursor.com/) | - | VSCode alternative with AI |
+---
 
 ## 🚀 Quick Start
 
-### Step 1: Create Your Project
+> **⚠️ Prerequisites**: GitHub account and [Node.js](https://nodejs.org/) required
 
-> **⚠️ Important**: Make sure you have a GitHub account before proceeding.
+1. **Create Project**: Click [Use this template](https://github.com/joshuafolkken/godot-project-template/generate) above
+2. **Clone & Setup**:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+   cd YOUR_REPO
+   npm install
+   ```
+3. **Start Development**: Open `project.godot` in Godot Engine
 
-<div align="center">
+---
 
-[![Use this template](https://img.shields.io/badge/Use_this_template-Click_here-blue?style=for-the-badge)](https://github.com/joshuafolkken/godot-project-template/generate)
+## ✨ Features
 
-</div>
+### �� **Game Development**
+- **📁 Organized Structure**: `assets/`, `scenes/`, `scripts/`, `tests/` directories
+- **🎨 Asset Management**: Fonts, sprites, audio with proper organization
+- **🌐 Localization**: Built-in multi-language support (EN/JP)
+- **📝 Typed GDScript**: Static typing with warnings enforcement
+- **🎯 Sample Code**: Ready-to-use examples and templates
 
-1. Click **"Use this template"** button above
-2. Name your new repository
-3. Choose visibility (public/private)
-4. Click **"Create repository from template"**
+### 🔧 **Development Tools**
+- **🖥️ VSCode/Cursor Integration**: Recommended extensions, auto-format on save
+- **✏️ Code Formatting**: `gdlint` & `gdformat` for consistent code style
+- **✅ Code Quality**: Spell checker with custom dictionaries
+- **🔬 Unit Testing**: GdUnit4 framework with sample tests
+- **🐛 Debugging**: Launch from VSCode/Cursor for debugging
 
-### Step 2: Setup & Configure
+### 🔄 **Automation & CI/CD**
+- **🪝 Git Hooks**: Pre-commit format checks, pre-push validation
+- **🤖 GitHub Actions**: Automated testing, formatting, and deployment
+- **🏷️ Version Management**: Auto-generate version tags on PR updates
+- **🌐 Web Deployment**: Auto-deploy to GitHub Pages with custom HTML template
+- **📊 Branch Protection**: Automated security and quality checks
 
-> **⚠️ Important**: Install [Node.js](https://nodejs.org/) for npm commands (if not already installed)
+### 🌐 **Export & Deployment**
+- **📦 Web Export**: Custom HTML template with Twitter Cards
+- **🚀 GitHub Pages**: Automatic deployment to gh-pages branch
+- **📱 Multi-Platform**: Export presets for various platforms
+- **🔧 Custom Templates**: Extensible export configuration
+
+### 🛡️ **Security & Quality**
+- **🔒 Security Policies**: Built-in security scanning and policies
+- **✅ Code Validation**: Automated linting and spell checking
+- **📋 PR Validation**: Format and test verification on pull requests
+- **🛡️ Branch Protection**: Restrict force pushes, require reviews
+
+---
+
+## ⚙️ Setup Guide
+
+### **Required Tools**
+
+| Tool | Installation | Purpose |
+|------|-------------|---------|
+| **Godot Engine** | [Download](https://godotengine.org/) | Game development |
+| **Node.js** | [Download](https://nodejs.org/) | NPM scripts |
+| **godot-gdscript-toolkit** | `pip install godot-gdscript-toolkit` | Code formatting |
+| **GdUnit4** | Install from Godot AssetLib | Unit testing |
+| **Lefthook** | `npm install -g @evilmartians/lefthook` | Git hooks |
+
+### **Configuration Steps**
+
+1. **Enable GdUnit4**: Project Settings → Plugins → Enable GdUnit4
+2. **Install Extensions**: VSCode/Cursor will prompt for recommended extensions
+3. **Update Project**: Change project name and version in settings
+4. **Configure GitHub Pages**: Set source to `gh-pages` branch
+
+---
+
+## 🔧 Development
+
+### **Available Commands**
 
 ```bash
-# Clone the project
-git clone https://github.com/YOUR_USERNAME/YOUR_NEW_REPO_NAME.git
-cd YOUR_NEW_REPO_NAME
+# Testing
+npm run test:win    # Windows testing
+npm run test:mac    # macOS testing
 
-# Install dependencies
-npm install
+# Code Quality
+npm run format      # Format all GDScript files
+npm run lint        # Run linting checks
+npm run spell       # Spell checking
+
+# Export
+# npm run export:web  # Export for web deployment
 ```
 
-### Step 3: Start Development
+### **Code Standards**
 
-- Open `project.godot` in Godot Engine
-- Update project name and version in settings
-- Install recommended VSCode extensions when prompted
-- Start coding in `scenes/` and `scripts/` folders
+- **📝 Typed GDScript**: Use static typing for better code quality
+- **🎨 Consistent Formatting**: Auto-format on save enabled
+- **✅ Spell Checking**: Custom dictionaries for game terminology
+- **🧪 Unit Tests**: Write tests for critical game logic
 
-## ⚙️ Advanced Setup
+---
 
-### Code Formatting Setup
+## ⚠️ Troubleshooting
 
-- Install [godot-gdscript-toolkit](https://github.com/Scony/godot-gdscript-toolkit)
-
-### GdUnit4 Testing Setup
-
-- Install GdUnit4 from Godot AssetLib
-- Enable GdUnit4 in Godot Project Settings
-- Run tests with `npm run test:win` (or `test:mac`)
-
-### Windows Setup
-
-- Modify Godot PATH in `lefthook.yml` and `package.json`, or place the executable there
-
-### GitHub Pages Auto-Deploy
-
-- Configure GitHub Pages to use the `gh-pages` branch
-- Create version hash tags to trigger deployment
-
-## ✅ GitHub Settings
-
-### General Settings
-
-- ✅ Allow merge commits only
-- ✅ Automatically delete head branches
-
-### Security Settings
-
-- Enable all options in **Settings > Advanced Security** (except "Automatic dependency submission")
-
-### Branch Protection Rules
-
-Set **Target branches** to `default` and enable:
-
-- ✅ Restrict deletions
-- ✅ Require a pull request before merging
-  - ✅ Dismiss stale pull request approvals when new commits are pushed
-- ✅ Require status checks to pass
-  - ✅ Require branches to be up to date before merging
-  - ✅ Required status checks:
-    - `unit-test`
-    - `lint-and-format`
-- ✅ Block force pushes
-- ✅ Require code scanning results
-
-## 🔍 Troubleshooting
-
-| Issue | Solution |
-|-------|----------|
+| Issue | Quick Fix |
+|-------|-----------|
 | **Tests not running** | Enable GdUnit4 plugin in Project Settings |
 | **Code formatting fails** | Install: `pip install godot-gdscript-toolkit` |
-| **Web export fails** | Configure GitHub Pages to use gh-pages branch |
 | **npm commands not found** | Install [Node.js](https://nodejs.org/) |
 | **Git hooks not working** | Install: `npm install -g @evilmartians/lefthook` |
+| **Web export fails** | Configure GitHub Pages to use gh-pages branch |
 
-
-### Still Having Issues?
-1. Check logs in Godot/VSCode
-2. Search [GitHub Issues](https://github.com/joshuafolkken/godot-project-template/issues)
-3. Create new issue with detailed description
+---
 
 ## 📞 Support
 
 <div align="center">
 
-### We're here to help!
+### **Need Help? We're Here!**
 
-| Channel | Purpose | Link |
-|:---|:---|:---|
-| **🐛 Bug Reports** | Report issues | [GitHub Issues](./issues) |
-| **💡 Feature Requests** | Suggest improvements | [GitHub Discussions](./discussions) |
-| **📚 Documentation** | Learn more | This README |
+| Channel | Purpose |
+|:---|:---|
+| **🐛 Bug Reports** | [GitHub Issues](./issues) |
+| **�� Feature Requests** | [GitHub Discussions](./discussions) |
+| **📖 Documentation** | [Project Wiki](./wiki) |
 
 </div>
 
+---
+
 ## 🙏 Thank You
 
-If you like this project, please give it a thumbs up and follow.
+If you find this template helpful, please give it a ⭐ and follow!
 
-This is an MIT-licensed open-source project. Consider supporting development:
+**This is an MIT-licensed open-source project.** Consider supporting development:
 
 - [Become a backer on Open Collective](https://opencollective.com/joshua-studio)
 
 Your support helps cover hosting costs and enables further enhancements!
+
+## ✅ GitHub Settings
+
+### General Settings
+- ✅ Allow merge commits only
+- ✅ Automatically delete head branches
+
+### Security Settings
+- Enable all options in **Settings > Advanced Security** (except "Automatic dependency submission")
+
+### Branch Protection Rules
+Set **Target branches** to `default` and enable:
+- ✅ Restrict deletions
+- ✅ Require a pull request before merging
+  - ✅ Dismiss stale pull request approvals when new commits are pushed
+- ✅ Require status checks to pass
+  - ✅ Require branches to be up to date before merging
+  - ✅ Require status checks: `unit-test`, `lint-and-format`
+- ✅ Block force pushes
+- ✅ Require code scanning results
+
+## 📊 Project Status
+
+[![Release](https://img.shields.io/github/v/release/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/releases)
+[![X](https://img.shields.io/badge/Follow-%40joshuafolkken-purple?logo=x&logoColor=fffffflabelColor=)](https://x.com/joshuafolkken)
+
+[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/issues?q=is%3Aissue%20state%3Aclosed)
+![GitHub repo size](https://img.shields.io/github/repo-size/joshuafolkken/godot-project-template)
+[![Auto Tag](https://github.com/joshuafolkken/godot-project-template/actions/workflows/auto-tag.yml/badge.svg)](https://github.com/joshuafolkken/godot-project-template/actions/workflows/auto-tag.yml)
+[![Deploy](https://github.com/joshuafolkken/godot-project-template/actions/workflows/deploy-web.yml/badge.svg)](https://github.com/joshuafolkken/godot-project-template/actions/workflows/deploy-web.yml)
