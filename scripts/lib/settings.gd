@@ -2,16 +2,12 @@ class_name Settings
 
 enum ErrorCode { SUCCESS = 0, FILE_NOT_FOUND = 1, SAVE_ERROR = 2, LOAD_ERROR = 3 }
 
+enum Section { LANGUAGE, STATISTICS }
+
+enum SectionKey { LOCALE, PLAY_COUNT, CLEAR_COUNT }
+
 const CONFIG := {
 	"PATH": "user://settings.cfg",
-	"SECTIONS":
-	{
-		"LANGUAGE": "language",
-	},
-	"KEYS":
-	{
-		"LOCALE": "locale",
-	},
 }
 
 const ERROR_MESSAGES := {
@@ -36,9 +32,26 @@ static func clear() -> ErrorCode:
 	return ErrorCode.SUCCESS
 
 
-static func save_language_setting(locale_code: String) -> ErrorCode:
+static func _load(section: Section, key: SectionKey, default: Variant) -> Variant:
 	var config := ConfigFile.new()
-	config.set_value(CONFIG.SECTIONS.LANGUAGE, CONFIG.KEYS.LOCALE, locale_code)
+
+	if config.load(CONFIG.PATH) != OK:
+		# print("[Settings] " + ERROR_MESSAGES[ErrorCode.LOAD_ERROR] % [CONFIG.PATH, default])
+		return default
+
+	var section_name: String = Section.keys()[section]
+	var key_name: String = SectionKey.keys()[key]
+
+	return config.get_value(section_name, key_name, default)
+
+
+static func _save(section: Section, key: SectionKey, value: Variant) -> ErrorCode:
+	var config := ConfigFile.new()
+	config.load(CONFIG.PATH)
+
+	var section_name: String = Section.keys()[section]
+	var key_name: String = SectionKey.keys()[key]
+	config.set_value(section_name, key_name, value)
 
 	var err := config.save(CONFIG.PATH)
 	if err != OK:
@@ -48,14 +61,27 @@ static func save_language_setting(locale_code: String) -> ErrorCode:
 	return ErrorCode.SUCCESS
 
 
-static func load_language_setting(default_locale: String) -> String:
-	var config := ConfigFile.new()
+static func load_language(default_locale: String) -> String:
+	return _load(Section.LANGUAGE, SectionKey.LOCALE, default_locale)
 
-	if config.load(CONFIG.PATH) != OK:
-		# print("[Settings] " + ERROR_MESSAGES[ErrorCode.LOAD_ERROR] % [CONFIG.PATH, default_locale])
-		return default_locale
 
-	var saved_locale: String = config.get_value(
-		CONFIG.SECTIONS.LANGUAGE, CONFIG.KEYS.LOCALE, default_locale
-	)
-	return saved_locale
+static func save_language(locale_code: String) -> ErrorCode:
+	return _save(Section.LANGUAGE, SectionKey.LOCALE, locale_code)
+
+
+static func load_play_count(default := 0) -> int:
+	return _load(Section.STATISTICS, SectionKey.PLAY_COUNT, default)
+
+
+static func increment_play_count() -> ErrorCode:
+	var count := load_play_count() + 1
+	return _save(Section.STATISTICS, SectionKey.PLAY_COUNT, count)
+
+
+static func load_clear_count(default := 0) -> int:
+	return _load(Section.STATISTICS, SectionKey.CLEAR_COUNT, default)
+
+
+static func increment_clear_count() -> ErrorCode:
+	var count := load_clear_count() + 1
+	return _save(Section.STATISTICS, SectionKey.CLEAR_COUNT, count)

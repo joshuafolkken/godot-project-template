@@ -54,7 +54,7 @@ func change_language(language_name: String) -> void:
 		return
 
 	var locale_code := SUPPORTED_LOCALES[language_name]
-	var err := Settings.save_language_setting(locale_code)
+	var err := Settings.save_language(locale_code)
 	if err == Settings.ErrorCode.SUCCESS:
 		TranslationServer.set_locale(locale_code)
 		language_changed.emit(locale_code)
@@ -66,7 +66,7 @@ func change_language(language_name: String) -> void:
 
 func load_saved_language() -> String:
 	var default_locale := OS.get_locale_language()
-	var locale_code := Settings.load_language_setting(default_locale)
+	var locale_code := Settings.load_language(default_locale)
 
 	if not is_locale_supported(locale_code):
 		var warn_message := ERROR_MESSAGES.unsupported_locale % locale_code
