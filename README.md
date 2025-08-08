@@ -1,13 +1,5 @@
 # <img src="https://godotengine.org/favicon.ico" width="28" height="28" style="vertical-align: middle;"> godot-project-template
 
-[![License](https://img.shields.io/github/license/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/blob/main/LICENSE)
-[![Release](https://img.shields.io/github/v/release/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/releases)
-[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/issues?q=is%3Aissue%20state%3Aclosed)
-![GitHub repo size](https://img.shields.io/github/repo-size/joshuafolkken/godot-project-template)
-[![CI](https://github.com/joshuafolkken/godot-project-template/actions/workflows/ci.yml/badge.svg)](https://github.com/joshuafolkken/godot-project-template/actions/workflows/ci.yml)
-[![Auto Tag](https://github.com/joshuafolkken/godot-project-template/actions/workflows/auto-tag.yml/badge.svg)](https://github.com/joshuafolkken/godot-project-template/actions/workflows/auto-tag.yml)
-[![Deploy](https://github.com/joshuafolkken/godot-project-template/actions/workflows/deploy-web.yml/badge.svg)](https://github.com/joshuafolkken/godot-project-template/actions/workflows/deploy-web.yml)
-[![X](https://img.shields.io/badge/Follow-%40joshuafolkken-purple?logo=x&logoColor=fffffflabelColor=)](https://x.com/joshuafolkken)
 
 <div align="center">
 A<br/>
@@ -18,9 +10,17 @@ for<br/>
 	<img src="https://godotengine.org/assets/press/logo_large_color_dark.png" width="400" alt="Godot Engine logo">
 </a><br/>
 
-[![Godot 4.4.1](https://img.shields.io/badge/Godot-v4.4.1-%23478cbf?logo=godot-engine&logoColor=eee&labelColor=)](https://godotengine.org/)
-
 </div>
+
+[![Godot 4.4.1](https://img.shields.io/badge/Godot-v4.4.1-%23478cbf?logo=godot-engine&logoColor=eee&labelColor=)](https://godotengine.org/)
+[![License](https://img.shields.io/github/license/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/blob/main/LICENSE)
+[![Release](https://img.shields.io/github/v/release/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/releases)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/issues?q=is%3Aissue%20state%3Aclosed)
+![GitHub repo size](https://img.shields.io/github/repo-size/joshuafolkken/godot-project-template)
+[![CI](https://github.com/joshuafolkken/godot-project-template/actions/workflows/ci.yml/badge.svg)](https://github.com/joshuafolkken/godot-project-template/actions/workflows/ci.yml)
+[![Auto Tag](https://github.com/joshuafolkken/godot-project-template/actions/workflows/auto-tag.yml/badge.svg)](https://github.com/joshuafolkken/godot-project-template/actions/workflows/auto-tag.yml)
+[![Deploy](https://github.com/joshuafolkken/godot-project-template/actions/workflows/deploy-web.yml/badge.svg)](https://github.com/joshuafolkken/godot-project-template/actions/workflows/deploy-web.yml)
+[![X](https://img.shields.io/badge/Follow-%40joshuafolkken-purple?logo=x&logoColor=fffffflabelColor=)](https://x.com/joshuafolkken)
 
 ## What is godot-project-template?
 
@@ -129,83 +129,86 @@ This is a collection of essential resources for Godot projects.
 - LICENSE
 - SECURITY.md
 
-## Installation
+## Getting Started
 
-### Project
+### Project Setup
+- Change project name and version in project settings
 
-- プロジェクト名とバージョンの変更
+### VSCode Setup
+- Install all recommended extensions from VSCode settings
 
-### VSCode
+### Node.js Setup
+- Install [Node.js](https://nodejs.org/) and ensure npm commands are available
+- Run `npm install` to install dependencies
 
-- VSCode の設定ファイルで推奨されている拡張パッケージはすべてインストールする
+### Windows Setup
+- Modify Godot PATH in `lefthook.yml` and `package.json`, or place the executable there
 
-### Node
+### Code Formatting
+- Install [godot-gdscript-toolkit](https://github.com/Scony/godot-gdscript-toolkit)
 
-- [Node.js](https://nodejs.org/ja/) をインストールし npm コマンドが利用できるようにする
-- npm install を実行する。
+### GdUnit4 Testing Framework
+- **Open Godot**
+- Install GdUnit4 from AssetLib
+- Enable GdUnit4 in Project Settings
+- Run tests from the tests folder
 
-### Windows
-
-- lefthook.yml と package.json の Godot の PATH を変更するかそこに実行ファイルを配置する
-
-### Format
-
-- [godot-gdscript-toolkit](https://github.com/Scony/godot-gdscript-toolkit) をインストールする
-
-### GdUnit4
-
-- Godot AssetLib を開き GdUnit4 をインストールする
-- Godot Project Settings を開き GdUnit4 を有効化する
-- Godot で GdUnit4 のタブを開き、設定ボタンから更新を確認する
-- 再度 Godot Project Settings を開き GdUnit4 を有効化する
-- tests フォルダで右クリックし、Run TestSuites を実行する
-
-
-### GitHub Pages への自動デプロイ
-
-- GitHub Pages の設定で、gh-pages ブランチを選択する
-- バージョンハッシュタグを作成すると、デプロイが動作する
+### GitHub Pages Auto-Deploy
+- Configure GitHub Pages to use the `gh-pages` branch
+- Create version hash tags to trigger deployment
 
 ## How to Use
 
-### デバッグ
+### Debugging
+Launch from VSCode (Cursor) for debugging capabilities
 
-VScode (Cursor) から起動し、デバッグができる
+### Testing
+Write GdUnit4 test code and run `npm run test:win` (or `test:mac`) commands
 
-### テスト
+### Automated Features
+The following processes are automated:
 
-GdUnit4 のテストコードを書き、npm run test:win (test:mac) コマンドを実行できる
+- **Static Typed GDScript Enforcement** (configurable)
+- **VSCode Extension Recommendations** (can be declined)
+- **Auto-format GDScript on save in VSCode**
+- **Spell checking**
+- **Pre-commit checks**: Verify not committing to main branch, format check, and spell check
+- **Pre-push checks**: Conflict verification, lint, and unit tests
+- **GitHub PR validation**: Format and test verification on PR submission
+- **Version tag generation**: Auto-generate version tags when game version is updated in PR
+- **Web export deployment**: Update gh-pages branch with web export when version tags are created
 
-### 自動化されているもの
+### Samples Included
+- **Internationalization support**
+- **Unit test code** (GdUnit4)
+- **Web export presets**
+- **Custom HTML template** with Twitter Card tags for web export
 
-以下は自動で行われます
+### Additional NPM Commands
+- Check [package.json](package.json) scripts section for available commands
 
-- 静的型付け GDScript の強制（設定変更可）
-- VSCode 拡張機能の推奨（拒否可能）
-- VSCodeでGDScriptを保存時にフォーマット
-- スペルチェック
-- COMMIT前に、mainブランチへのCommitでないかを確認し、フォーマットチェックとスペルチェックを実行
-- PUSH前に、コンフリクトを確認し、lint とユニットテストを実行
-- GitHub で PR 送信時に、フォーマットとテストの検証
-- GitHub で PR 送信時に、ゲームのバージョンが更新されていたらバージョンタグを発行
-- バージョンタグが発行された際に、Webエクスポートで gh-pages ブランチを更新
+## GitHub Recommended Settings
 
-### サンプル
+### General Settings
+- **Allow merge commits only**
+- **Enable "Automatically delete head branches"**
 
-- 国際化対応
-- UnitTestコード (GdUnit4)
-- Webエクスポートのプリセット
-- WebエクスポートのカスタムHTMLに Twitter Cord タグ
+### Security Settings
+- In **Settings > Advanced Security**, enable all options except "Automatic dependency submission"
 
-### その他のコマンド
-
-- [package.json](package.json) の scripts ご確認下さい
-
-## GitHub の推奨設定
-
-### Base Settings
-### Security
-### Branch Projection Role
+### Branch Protection Rules
+- Set **Target branches** to `default`
+- Enable the following protections:
+  - **Restrict deletions**
+  - **Require a pull request before merging**
+    - **Dismiss stale pull request approvals when new commits are pushed**
+  - **Require status checks to pass**
+    - **Require branches to be up to date before merging**
+    - **Required status checks**:
+      - `unit-test`
+      - `lint-and-format`
+  - **Block force pushes**
+  - **Require code scanning results**
 
 
 ## You're Welcome To
