@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://djcdy0d718ei3"]
 
-[ext_resource type="Script" uid="uid://bbccn2rr1vgd0" path="res://scripts/example.gd" id="1_pssa7"]
-[ext_resource type="Script" uid="uid://c2ygiqd5o7caw" path="res://scripts/lib/language_button.gd" id="2_7w8s4"]
+[ext_resource type="Script" uid="uid://bbccn2rr1vgd0" path="res://scenes/example.gd" id="1_pssa7"]
+[ext_resource type="Script" uid="uid://c2ygiqd5o7caw" path="res://scripts/lib/ui/language_button.gd" id="2_7w8s4"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_pssa7")
