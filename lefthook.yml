@@ -6,7 +6,7 @@ pre-commit:
       run: |
         branch=$(git rev-parse --abbrev-ref HEAD)
         if [ "$branch" = "main" ]; then
-          echo "Direct commits to the main branch are not allowed. Please use a different branch."
+          echo 'Direct commits to the main branch are not allowed. Please use a different branch.'
           exit 1
         fi
 
@@ -15,7 +15,7 @@ pre-commit:
       run: gdformat {staged_files}
 
     spell-check:
-      glob: "*.gd, *.md"
+      glob: "*.gd,*.md"
       run: npx cspell {staged_files}
 
 pre-push:
@@ -30,15 +30,15 @@ pre-push:
         if [ $? -eq 0 ]; then
             git merge --no-commit --no-ff origin/main
             if [ $? -ne 0 ]; then
-                echo "Merge conflict detected. Please resolve before pushing."
+                echo 'Merge conflict detected. Please resolve before pushing.'
                 git reset --soft HEAD
                 exit 1
             else
-                echo "No merge conflict detected."
+                echo 'No merge conflict detected.'
                 git reset --soft HEAD
             fi
         else
-            echo "Your branch has diverged from 'main'. Please rebase or merge 'main' into your branch first."
+            echo 'Your branch has diverged from 'main'. Please rebase or merge 'main' into your branch first.'
             exit 1
         fi
 
@@ -48,5 +48,11 @@ pre-push:
 
     gdscript-test:
       run: |
-        export GODOT_BIN=/Applications/Godot.app/Contents/MacOS/Godot
+        if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" ]]; then
+          export GODOT_BIN='C:\Program Files\Godot\Godot_v4.4.1-stable_win64.exe'
+        elif [[ "$OSTYPE" == "darwin"* ]]; then
+            export GODOT_BIN=/Applications/Godot.app/Contents/MacOS/Godot
+        else
+          export GODOT_BIN=godot
+        fi
         ./addons/gdUnit4/runtest.sh -a ./tests -a ./scripts
