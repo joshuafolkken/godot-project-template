@@ -1,13 +1,5 @@
 # <img src="https://godotengine.org/favicon.ico" width="28" height="28" style="vertical-align: middle;"> godot-project-template
 
-[![License](https://img.shields.io/github/license/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/blob/main/LICENSE)
-[![Release](https://img.shields.io/github/v/release/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/releases)
-[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/issues?q=is%3Aissue%20state%3Aclosed)
-![GitHub repo size](https://img.shields.io/github/repo-size/joshuafolkken/godot-project-template)
-[![CI](https://github.com/joshuafolkken/godot-project-template/actions/workflows/ci.yml/badge.svg)](https://github.com/joshuafolkken/godot-project-template/actions/workflows/ci.yml)
-[![Auto Tag](https://github.com/joshuafolkken/godot-project-template/actions/workflows/auto-tag.yml/badge.svg)](https://github.com/joshuafolkken/godot-project-template/actions/workflows/auto-tag.yml)
-[![Deploy](https://github.com/joshuafolkken/godot-project-template/actions/workflows/deploy-web.yml/badge.svg)](https://github.com/joshuafolkken/godot-project-template/actions/workflows/deploy-web.yml)
-[![X](https://img.shields.io/badge/Follow-%40joshuafolkken-purple?logo=x&logoColor=fffffflabelColor=)](https://x.com/joshuafolkken)
 
 <div align="center">
 A<br/>
@@ -18,9 +10,17 @@ for<br/>
 	<img src="https://godotengine.org/assets/press/logo_large_color_dark.png" width="400" alt="Godot Engine logo">
 </a><br/>
 
-[![Godot 4.4.1](https://img.shields.io/badge/Godot-v4.4.1-%23478cbf?logo=godot-engine&logoColor=eee&labelColor=)](https://godotengine.org/)
-
 </div>
+
+[![Godot 4.4.1](https://img.shields.io/badge/Godot-v4.4.1-%23478cbf?logo=godot-engine&logoColor=eee&labelColor=)](https://godotengine.org/)
+[![License](https://img.shields.io/github/license/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/blob/main/LICENSE)
+[![Release](https://img.shields.io/github/v/release/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/releases)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/issues?q=is%3Aissue%20state%3Aclosed)
+![GitHub repo size](https://img.shields.io/github/repo-size/joshuafolkken/godot-project-template)
+[![CI](https://github.com/joshuafolkken/godot-project-template/actions/workflows/ci.yml/badge.svg)](https://github.com/joshuafolkken/godot-project-template/actions/workflows/ci.yml)
+[![Auto Tag](https://github.com/joshuafolkken/godot-project-template/actions/workflows/auto-tag.yml/badge.svg)](https://github.com/joshuafolkken/godot-project-template/actions/workflows/auto-tag.yml)
+[![Deploy](https://github.com/joshuafolkken/godot-project-template/actions/workflows/deploy-web.yml/badge.svg)](https://github.com/joshuafolkken/godot-project-template/actions/workflows/deploy-web.yml)
+[![X](https://img.shields.io/badge/Follow-%40joshuafolkken-purple?logo=x&logoColor=fffffflabelColor=)](https://x.com/joshuafolkken)
 
 ## What is godot-project-template?
 
@@ -128,6 +128,88 @@ This is a collection of essential resources for Godot projects.
   - Show Badges
 - LICENSE
 - SECURITY.md
+
+## Getting Started
+
+### Project Setup
+- Change project name and version in project settings
+
+### VSCode Setup
+- Install all recommended extensions from VSCode settings
+
+### Node.js Setup
+- Install [Node.js](https://nodejs.org/) and ensure npm commands are available
+- Run `npm install` to install dependencies
+
+### Windows Setup
+- Modify Godot PATH in `lefthook.yml` and `package.json`, or place the executable there
+
+### Code Formatting
+- Install [godot-gdscript-toolkit](https://github.com/Scony/godot-gdscript-toolkit)
+
+### GdUnit4 Testing Framework
+- **Open Godot**
+- Install GdUnit4 from AssetLib
+- Enable GdUnit4 in Project Settings
+- Run tests from the tests folder
+
+### GitHub Pages Auto-Deploy
+- Configure GitHub Pages to use the `gh-pages` branch
+- Create version hash tags to trigger deployment
+
+## How to Use
+
+### Debugging
+Launch from VSCode (Cursor) for debugging capabilities
+
+### Testing
+Write GdUnit4 test code and run `npm run test:win` (or `test:mac`) commands
+
+### Automated Features
+The following processes are automated:
+
+- **Static Typed GDScript Enforcement** (configurable)
+- **VSCode Extension Recommendations** (can be declined)
+- **Auto-format GDScript on save in VSCode**
+- **Spell checking**
+- **Pre-commit checks**: Verify not committing to main branch, format check, and spell check
+- **Pre-push checks**: Conflict verification, lint, and unit tests
+- **GitHub PR validation**: Format and test verification on PR submission
+- **Version tag generation**: Auto-generate version tags when game version is updated in PR
+- **Web export deployment**: Update gh-pages branch with web export when version tags are created
+
+### Samples Included
+- **Internationalization support**
+- **Unit test code** (GdUnit4)
+- **Web export presets**
+- **Custom HTML template** with Twitter Card tags for web export
+
+### Additional NPM Commands
+- Check [package.json](package.json) scripts section for available commands
+
+## GitHub Recommended Settings
+
+### General Settings
+- **Allow merge commits only**
+- **Enable "Automatically delete head branches"**
+
+### Security Settings
+- In **Settings > Advanced Security**, enable all options except "Automatic dependency submission"
+
+### Branch Protection Rules
+- Set **Target branches** to `default`
+- Enable the following protections:
+  - **Restrict deletions**
+  - **Require a pull request before merging**
+    - **Dismiss stale pull request approvals when new commits are pushed**
+  - **Require status checks to pass**
+    - **Require branches to be up to date before merging**
+    - **Required status checks**:
+      - `unit-test`
+      - `lint-and-format`
+  - **Block force pushes**
+  - **Require code scanning results**
+
 
 ## You're Welcome To
 
