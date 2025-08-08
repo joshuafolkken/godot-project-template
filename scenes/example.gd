@@ -13,6 +13,7 @@ func _init() -> void:
 	add_child(_test_color_rect)
 
 	_init_timer()
+	Log.d()
 
 
 func _init_timer() -> void:
@@ -27,6 +28,7 @@ func _ready() -> void:
 	version_label.text = "v%s" % ProjectSettings.get_setting("application/config/version")
 	_timer.start()
 	_update_datetime()
+	Log.d()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
