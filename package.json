@@ -1,0 +1,13 @@
+{
+    "name": "godot-project-template",
+    "version": "1.0.0",
+    "scripts": {
+        "spellcheck": "cspell \"**/*\"",
+        "spellcheck:fix": "cspell \"**/*\" --fix",
+        "spellcheck:quiet": "cspell \"**/*\" --quiet",
+        "spellcheck:report": "cspell \"**/*\" --report all"
+    },
+    "devDependencies": {
+        "cspell": "^9.2.0"
+    }
+}
