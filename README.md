@@ -129,6 +129,85 @@ This is a collection of essential resources for Godot projects.
 - LICENSE
 - SECURITY.md
 
+## Installation
+
+### Project
+
+- プロジェクト名とバージョンの変更
+
+### VSCode
+
+- VSCode の設定ファイルで推奨されている拡張パッケージはすべてインストールする
+
+### Node
+
+- [Node.js](https://nodejs.org/ja/) をインストールし npm コマンドが利用できるようにする
+- npm install を実行する。
+
+### Windows
+
+- lefthook.yml と package.json の Godot の PATH を変更するかそこに実行ファイルを配置する
+
+### Format
+
+- [godot-gdscript-toolkit](https://github.com/Scony/godot-gdscript-toolkit) をインストールする
+
+### GdUnit4
+
+- Godot AssetLib を開き GdUnit4 をインストールする
+- Godot Project Settings を開き GdUnit4 を有効化する
+- Godot で GdUnit4 のタブを開き、設定ボタンから更新を確認する
+- 再度 Godot Project Settings を開き GdUnit4 を有効化する
+- tests フォルダで右クリックし、Run TestSuites を実行する
+
+
+### GitHub Pages への自動デプロイ
+
+- GitHub Pages の設定で、gh-pages ブランチを選択する
+- バージョンハッシュタグを作成すると、デプロイが動作する
+
+## How to Use
+
+### デバッグ
+
+VScode (Cursor) から起動し、デバッグができる
+
+### テスト
+
+GdUnit4 のテストコードを書き、npm run test:win (test:mac) コマンドを実行できる
+
+### 自動化されているもの
+
+以下は自動で行われます
+
+- 静的型付け GDScript の強制（設定変更可）
+- VSCode 拡張機能の推奨（拒否可能）
+- VSCodeでGDScriptを保存時にフォーマット
+- スペルチェック
+- COMMIT前に、mainブランチへのCommitでないかを確認し、フォーマットチェックとスペルチェックを実行
+- PUSH前に、コンフリクトを確認し、lint とユニットテストを実行
+- GitHub で PR 送信時に、フォーマットとテストの検証
+- GitHub で PR 送信時に、ゲームのバージョンが更新されていたらバージョンタグを発行
+- バージョンタグが発行された際に、Webエクスポートで gh-pages ブランチを更新
+
+### サンプル
+
+- 国際化対応
+- UnitTestコード (GdUnit4)
+- Webエクスポートのプリセット
+- WebエクスポートのカスタムHTMLに Twitter Cord タグ
+
+### その他のコマンド
+
+- [package.json](package.json) の scripts ご確認下さい
+
+## GitHub の推奨設定
+
+### Base Settings
+### Security
+### Branch Projection Role
+
+
 ## You're Welcome To
 
 - Give Feedback in Discussions
