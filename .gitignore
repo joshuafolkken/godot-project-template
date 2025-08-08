@@ -13,3 +13,5 @@ reports/
 
 addons/*
 !addons/export_custom_manifest/
+
+node_modules/

@@ -1,4 +1,5 @@
-gdscript
 gdformat
 gdlint
+gdscript
 gdtoolkit
+nplurals

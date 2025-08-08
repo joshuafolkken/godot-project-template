@@ -1,12 +1,12 @@
 extends GdUnitTestSuite
 
-const _SCENE_UID := "uid://djcdy0d718ei3"
+const _SCENE_PATH := "res://scenes/example.tscn"
 
 var _runner: GdUnitSceneRunner
 
 
 func before_test() -> void:
-	_runner = scene_runner(_SCENE_UID)
+	_runner = scene_runner(_SCENE_PATH)
 
 
 func test_example() -> void:
