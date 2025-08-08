@@ -138,9 +138,8 @@ npm run spell       # Spell checking
 
 | Channel | Purpose |
 |:---|:---|
-| **🐛 Bug Reports** | [GitHub Issues](./issues) |
-| **✨ Feature Requests** | [GitHub Discussions](./discussions) |
-| **📖 Documentation** | [Project Wiki](./wiki) |
+| **🐛 Bug Reports** | [GitHub Issues](https://github.com/joshuafolkken/godot-project-template/issues) |
+| **✨ Feature Requests** | [GitHub Discussions](https://github.com/joshuafolkken/godot-project-template/discussions) |
 
 </div>
 
@@ -216,7 +215,6 @@ Set **Target branches** to `default` and enable:
 
 [![Release](https://img.shields.io/github/v/release/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/releases)
 [![X](https://img.shields.io/badge/Follow-%40joshuafolkken-purple?logo=x&logoColor=fffffflabelColor=)](https://x.com/joshuafolkken)
-
 [![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/issues?q=is%3Aissue%20state%3Aclosed)
 ![GitHub repo size](https://img.shields.io/github/repo-size/joshuafolkken/godot-project-template)
 [![Auto Tag](https://github.com/joshuafolkken/godot-project-template/actions/workflows/auto-tag.yml/badge.svg)](https://github.com/joshuafolkken/godot-project-template/actions/workflows/auto-tag.yml)
