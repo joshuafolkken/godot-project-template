@@ -2,6 +2,8 @@ Folkken
 fullsize
 joshuafolkken
 Lefthook
+msys
+OSTYPE
 platformer
 respawned
 runtest
