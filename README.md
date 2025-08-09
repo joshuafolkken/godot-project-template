@@ -6,7 +6,7 @@
 	<img src="https://godotengine.org/assets/press/logo_large_color_dark.png" width="400" alt="Godot Engine logo">
 </a><br/>
 
-**Complete project template for Godot Engine development**
+**🚀 Production-ready template for Godot Engine development**
 
 [![Use this template](https://img.shields.io/badge/Use_this_template-Click_here-blue?style=for-the-badge)](https://github.com/joshuafolkken/godot-project-template/generate)
 
@@ -14,79 +14,120 @@
 [![License](https://img.shields.io/github/license/joshuafolkken/godot-project-template)](https://github.com/joshuafolkken/godot-project-template/blob/main/LICENSE)
 [![CI](https://github.com/joshuafolkken/godot-project-template/actions/workflows/ci.yml/badge.svg)](https://github.com/joshuafolkken/godot-project-template/actions/workflows/ci.yml)
 
+**⭐ Star this repo if it helps you!**
+
 </div>
 
-## 🚀 Quick Start
+## 🎯 What Makes This Template Special?
 
-> **⚠️ Prerequisites**: GitHub account and [Node.js](https://nodejs.org/) required
+This template transforms your Godot development experience with:
 
-1. **Create Project**: Click [Use this template](https://github.com/joshuafolkken/godot-project-template/generate) above
-2. **Clone & Setup**:
-   ```bash
-   # Clone the template
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-   cd YOUR_REPO
+- **⚡ Zero Configuration** - Start developing immediately with pre-configured tools
+- **🛡️ Production Ready** - Enterprise-grade CI/CD, testing, and deployment
+- **🌍 Global Ready** - Built-in internationalization with EN/JP support
+- **🌐 Multi-Platform** - Web, desktop, and mobile deployment ready
+- **🚀 Auto-Deploy** - GitHub Pages deployment with PWA support
+- **🧪 Testing First** - GdUnit4 integration with automated testing
 
-   # Install dependencies
-   npm install
-   ```
-3. **Start Development**: Open `project.godot` in Godot Engine
+## 🆚 Why Use This Template?
+
+| Feature | This Template | Godot New Project |
+|---------|---------------|-------------------|
+| **Initial Setup** | ✅ Ready to develop | ✅ Ready to develop |
+| **Testing Environment** | ✅ GdUnit4 integrated | ⚠️ Manual test setup |
+| **CI/CD** | ✅ GitHub Actions automated | ⚠️ Manual workflow creation |
+| **Multi-language** | ✅ EN/JP ready | ⚠️ Manual internationalization |
+| **Web Export** | ✅ PWA ready | ⚠️ Manual web configuration |
+| **Code Quality** | ✅ Auto-format & lint | ⚠️ Manual tool setup |
+| **Git Management** | ✅ Hooks automated | ⚠️ Manual Git setup |
+| **Deployment** | ✅ Auto-deploy configured | ⚠️ Manual deployment setup |
+| **Project Structure** | ✅ Optimized structure | ⚠️ Basic structure only |
+| **Asset Management** | ✅ Custom fonts configured | ⚠️ Manual asset setup |
+
+## 🚀 Quick Start (30 seconds)
+
+1. **Click** [Use this template](https://github.com/joshuafolkken/godot-project-template/generate)
+2. **Clone** your new repository
+3. **Open** `project.godot` in Godot Engine
+4. **Start coding!** 🎉
+
+**🎯 Pro Tip:** Enable the GdUnit4 plugin in Project Settings for full testing capabilities!
 
 ## ✨ Features
 
-🎮 **Game Development**
-- 📁 Organized Structure
-- 🎨 Asset Management
-- 🌐 Localization
-- 📝 Typed GDScript
-- 🎯 Sample Code
+<details>
+<summary><strong>📋 Complete Feature Breakdown</strong></summary>
 
-🛠️ **Development Tools**
-- 🖥️ VSCode/Cursor Integration
-- ✏️ Code Formatting & Quality
-- 🧪 Testing Framework (GdUnit4)
-- 🐛 Debugging Support
+### 🎮 **Development Ready**
+- **📁 Project Structure** - Clean, scalable folder organization
+- **🎨 Asset Management** - Custom fonts with proper import setup
+- **🌐 Multi-Language** - English/Japanese with real-time switching
+- **📝 Typed GDScript** - Static typing for better code quality
+- **🎯 Sample Implementation** - Complete example scene with real-time features
+- **💾 Settings Management** - Type-safe configuration with error handling
+- **🖥️ Editor Integration** - VSCode/Cursor optimized configuration
+- **🧪 Testing Framework** - GdUnit4 with automated test execution
+- **🐛 Advanced Debugging** - Comprehensive logging with timestamps
+- **🎯 Spell Checking** - Multi-dictionary system with custom terminology
 
-🔄 **Automation & CI/CD**
-- 🪝 Git Hooks (Pre-commit/Pre-push)
-- 🤖 GitHub Actions
-- 🏷️ Version Management
-- 📊 Branch Protection & Security
+### 🔄 **Automation**
+- **✏️ Code Quality** - Auto-formatting and linting
+- **🪝 Git Hooks** - Pre-commit and pre-push automation
+- **🤖 GitHub Actions** - Automated CI/CD with multiple workflows
+- **🏷️ Version Management** - Automatic version tagging and releases
+- **🛡️ Security & Quality** - Branch protection and conflict detection
+- **🚫 Main Branch Protection** - Prevents direct commits to main branch
+- **🔍 Conflict Prevention** - Automatic merge conflict detection
+- **🧹 Report Cleanup** - Automated test report management
+- **📊 Quality Gates** - Automated testing and code quality checks
+- **🔍 Code Scanning** - Security and quality analysis
+- **🛡️ PR Validation** - Automated pull request checks
+- **🔒 Security Settings** - GitHub security configurations
 
-🌐 **Export & Deployment**
-- 📦 Multi-Platform Export
-- 🚀 GitHub Pages Auto-deploy
-- 🐦 Custom HTML Templates
-- 🗂️ Export Presets
+### 🌐 **Web Deployment**
+- **📦 Web Export** - Optimized web export preset with PWA support
+- **🚀 GitHub Pages Auto-Deploy** - Automatic web deployment
+- **🐦 Custom HTML** - Optimized web export with PWA support
+- **🗂️ Export Presets** - Pre-configured export settings
+- **📱 Progressive Web App** - Full PWA support with offline capabilities
+- **📊 Social Media** - Twitter cards and meta tags
 
-🛡️ **Quality Assurance**
-- ✅ Automated Testing
-- 🔍 Code Scanning
-- 🛡️ PR Validation
-- 🎯 Spell Checking
+</details>
 
 ## ⚙️ Setup Guide
 
-### Required Tools
+### Prerequisites
 
-| Tool | Installation | Purpose |
-|------|-------------|---------|
-| **Godot Engine** | [Download](https://godotengine.org/) | Game development |
-| **Node.js** | [Download](https://nodejs.org/) | NPM scripts |
-| **godot-gdscript-toolkit** | `pip install godot-gdscript-toolkit` | Code formatting |
-| **GdUnit4** | Install from Godot AssetLib | Unit testing |
-| **Lefthook** | `npm install -g @evilmartians/lefthook` | Git hooks |
+| Tool | Version | Installation |
+|------|---------|-------------|
+| **Godot Engine** | 4.4.1+ | [Download](https://godotengine.org/) |
+| **GdUnit4** | Latest | Godot AssetLib |
+| **Node.js** | 18+ | [Download](https://nodejs.org/) |
+| **godot-gdscript-toolkit** | Latest | [Install](https://github.com/Scony/godot-gdscript-toolkit) |
 
-### Configuration Steps
+### Step-by-Step Setup
 
-1. **Enable GdUnit4**: Project Settings → Plugins → Enable GdUnit4
-2. **Install Extensions**: VSCode/Cursor will prompt for recommended extensions
-3. **Update Project**: Change project name and version in settings
-4. **Configure GitHub Pages**: Set source to `gh-pages` branch
+1. **Enable GdUnit4 Plugin**
+   ```
+   Project Settings → Plugins → GdUnit4 → Enable
+   ```
 
-## 🔧 Development
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-### Available Commands
+3. **Configure Editor** (Optional)
+   - Install VSCode/Cursor extensions
+   - Enable auto-format on save
+
+4. **Customize Project**
+   - Update project name in `project.godot`
+   - Configure GitHub Pages: Settings → Pages → Source: `gh-pages`
+
+## 🔧 Development Workflow
+
+### Essential Commands
 
 ```bash
 # Testing
@@ -96,120 +137,91 @@ npm run test:mac    # macOS testing
 # Code Quality
 npm run format      # Format all GDScript files
 npm run lint        # Run linting checks
-npm run spell       # Spell checking
+npm run spell       # Spell check with custom dictionaries
 ```
 
-### Code Standards
+### Development Standards
 
-- **📝 Typed GDScript**: Use static typing for better code quality
-- **🎨 Consistent Formatting**: Auto-format on save enabled
-- **✅ Spell Checking**: Custom dictionaries for game terminology
-- **🧪 Unit Tests**: Write tests for critical game logic
+- **📝 Typed GDScript** - Use static typing for all functions
+- **🎨 Auto-format** - Enable format on save in your editor
+- **✅ Spell Check** - Custom dictionaries for game terminology
+- **🧪 Unit Tests** - Write tests for critical game logic
+- **🌐 Translations** - Add new languages to `locale/` directory
 
-## ❓ FAQ
+## 🎮 Example Implementation
 
-### 🚀 Quick Solutions
+The template includes a complete example scene demonstrating:
 
-**Common Issues & Fixes:**
+- **Real-time language switching** with UI buttons
+- **Type-safe settings management** with error handling
+- **Comprehensive logging** with timestamp tracking
+- **Asset management** with custom fonts
+- **Testing examples** with GdUnit4
 
-- **🧪 Tests not running?** → Enable GdUnit4 plugin in Project Settings
-- **💻 Code formatting not working?** → Install: `pip install godot-gdscript-toolkit`
-- **📦 npm commands not found?** → Install [Node.js](https://nodejs.org/)
-- **🪝 Git hooks not working?** → Install: `npm install -g @evilmartians/lefthook`
-- **🌐 Web export fails?** → Check GitHub Pages branch configuration
+## ❓ Troubleshooting
 
-### Frequently Asked Questions
+### Common Issues & Solutions
+
+| Issue | Solution | Priority |
+|:------|:---------|:---------|
+| **🧪 Tests not running** | Enable GdUnit4 plugin in Project Settings | 🔴 High |
+| **💻 Formatting not working** | Install [godot-gdscript-toolkit](https://github.com/Scony/godot-gdscript-toolkit) | 🔴 High |
+| **📦 npm commands fail** | Install [Node.js 18+](https://nodejs.org/) | 🔴 High |
+| **🪝 Git hooks not working** | Run `npm install` to install Lefthook | 🟡 Medium |
+| **🌐 Web export fails** | Check GitHub Pages branch is set to `gh-pages` | 🟡 Medium |
+| **🌍 Translations not showing** | Ensure `.po` files are in `locale/` directory | 🟡 Medium |
+
+### FAQ
 
 | Question | Answer |
 |:---------|:-------|
-| **Can I use this with Godot 4.3?** | This template is optimized for Godot 4.4.1, but should work with 4.3+ |
-| **Do I need to install all the tools?** | Only Godot Engine and Node.js are required to start. Other tools are optional but recommended |
-| **How do I customize the project name?** | Edit `project.godot` and update the project name in Project Settings |
-| **How do I add new languages?** | Add new `.po` files in the `locale/` directory and update the language manager |
-| **Why aren't my tests running?** | Make sure GdUnit4 plugin is enabled in Project Settings → Plugins |
-| **How do I deploy to GitHub Pages?** | Configure GitHub Pages to use the `gh-pages` branch as source |
-| **Can I use this for commercial projects?** | Yes! This template is MIT licensed and free for any use |
+| **Godot 4.3 compatible?** | ✅ Yes, optimized for 4.4.1 but works with 4.3+ |
+| **All tools required?** | ❌ Only Godot Engine and Node.js required |
+| **Customize project name?** | ✅ Edit `project.godot` and update references |
+| **Add new languages?** | ✅ Add `.po` files to `locale/` directory |
+| **Commercial use?** | ✅ Yes, MIT licensed for any use |
+| **Deploy to other platforms?** | ✅ Configure export presets in Godot |
 
-## 📞 Support
+## 📞 Support & Community
 
-<div align="center">
+| Channel | Purpose | Response Time |
+|:--------|:--------|:-------------|
+| **🐛 Bug Reports** | [GitHub Issues](https://github.com/joshuafolkken/godot-project-template/issues) | < 48h |
+| **✨ Feature Requests** | [GitHub Discussions](https://github.com/joshuafolkken/godot-project-template/discussions) | < 48h |
+| **💬 General Questions** | [GitHub Discussions](https://github.com/joshuafolkken/godot-project-template/discussions) | < 48h |
 
-### Need Help? We're Here!
+## 📝 License
 
-| Channel | Purpose |
-|:---|:---|
-| **🐛 Bug Reports** | [GitHub Issues](https://github.com/joshuafolkken/godot-project-template/issues) |
-| **✨ Feature Requests** | [GitHub Discussions](https://github.com/joshuafolkken/godot-project-template/discussions) |
+MIT License - see [LICENSE](LICENSE) for details.
 
-</div>
-
-## 📝 Changelog
-
-See [Releases](./releases) for a list of changes and version history.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Thank You
-
-<div align="center">
-
-### Support This Project
-
-If you find this template helpful, please consider:
+## 🙏 Support This Project
 
 [![GitHub stars](https://img.shields.io/badge/⭐_Star_this_repo-If_helpful!-yellow?style=for-the-badge)](https://github.com/joshuafolkken/godot-project-template)
 [![Follow](https://img.shields.io/badge/🐦_Follow_%40joshuafolkken-For_updates!-blue?style=for-the-badge)](https://x.com/joshuafolkken)
 
-</div>
-
 ### Ways to Contribute
 
-- **⭐ Star the repository** - Show your support
-- **🐛 Report bugs** - Help improve the template
-- **✨ Suggest features** - Share your ideas
-- **📖 Improve documentation** - Help others learn
-- **🤝 Share with others** - Spread the word
+- **⭐ Star the repository** - Helps with visibility
+- **🐛 Report bugs** - Help improve stability
+- **✨ Suggest features** - Shape future development
+- **📖 Improve docs** - Help other developers
+- **🔧 Submit PRs** - Direct code contributions
 
 ### Financial Support
 
-**This is an MIT-licensed open-source project.** Your support helps cover hosting costs and enables further enhancements:
+Support continued development:
+- [Open Collective](https://opencollective.com/joshua-studio) - Monthly support
+- [Buy me a coffee](https://ko-fi.com/joshuafolkken) ☕ - One-time support
 
-- [Become a backer on Open Collective](https://opencollective.com/joshua-studio)
-- [Buy me a coffee](https://ko-fi.com/joshuafolkken) ☕
+### Credits
 
-### Credits & Acknowledgments
-
-Special thanks to:
 - [Godot Engine](https://godotengine.org/) - The amazing game engine
-- [GdUnit4](https://github.com/MikeSchulze/gdUnit4) - Unit testing framework
-- [Lefthook](https://github.com/evilmartians/lefthook) - Git hooks management
-- All contributors and supporters of this project
+- [GdUnit4](https://github.com/MikeSchulze/gdUnit4) - Testing framework
+- [Lefthook](https://github.com/evilmartians/lefthook) - Git hooks automation
 
 ---
 
 **Made with ❤️ for the Godot community**
-
-## ✅ GitHub Settings
-
-### General Settings
-- ✅ Allow merge commits only
-- ✅ Automatically delete head branches
-
-### Security Settings
-- Enable all options in **Settings > Advanced Security** (except "Automatic dependency submission")
-
-### Branch Protection Rules
-Set **Target branches** to `default` and enable:
-- ✅ Restrict deletions
-- ✅ Require a pull request before merging
-  - ✅ Dismiss stale pull request approvals when new commits are pushed
-- ✅ Require status checks to pass
-  - ✅ Require branches to be up to date before merging
-  - ✅ Require status checks: `unit-test`, `lint-and-format`
-- ✅ Block force pushes
-- ✅ Require code scanning results
 
 ## 📊 Project Status
 
