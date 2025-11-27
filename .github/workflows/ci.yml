@@ -56,7 +56,7 @@ jobs:
 
       - uses: MikeSchulze/gdUnit4-action@v1.1.1
         with:
-          godot-version: "4.4.1"
+          godot-version: "4.5.1"
           paths: |
             res://scripts/
             res://tests/
