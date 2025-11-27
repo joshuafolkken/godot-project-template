@@ -11,9 +11,9 @@ config_version=5
 [application]
 
 config/name="New Game Project"
-config/version="0.64.1"
+config/version="0.65.0"
 run/main_scene="uid://djcdy0d718ei3"
-config/features=PackedStringArray("4.4", "Forward Plus")
+config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
 [debug]
